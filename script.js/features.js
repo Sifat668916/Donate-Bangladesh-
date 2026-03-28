@@ -107,3 +107,16 @@ document.getElementById('transaction-button-main').addEventListener("click", fun
 })
 
 // donation and history button toggle end here  
+
+const donateBtn = document.getElementById("flood-donate");
+const modal = document.getElementById("modal");
+const closeModal = document.getElementById("closeModal");
+
+
+donateBtn.addEventListener("click", () => {
+  modal.classList.remove("hidden");
+});
+
+closeModal.addEventListener("click", () => {
+  modal.classList.add("hidden");
+});
