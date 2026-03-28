@@ -13,13 +13,13 @@
   <header class="sticky top-0 z-50 bg-white/70 backdrop-blur-md">
     <nav class="">
       <!-- navbar content goes here -->
-      <div class="navbar bg-base-100 shadow-sm px-10 py-10">
+      <div class="navbar bg-base-100 shadow-sm md:px-10 md:py-10">
         <div class="navbar-start">
-          <a class="btn bg-[#b4f461] rounded-lg">Blog</a>
+          <a class="btn bg-[#b4f461] rounded-lg hidden sm:inline-block text-white">Blog</a>
         </div>
         <div class="navbar-center">
           <img src="images/logo.png" alt="Logo" class="">
-          <a class="btn btn-ghost text-xl">Donate Bangladesh</a>
+          <a class="btn btn-ghost text-lg">Donate Bangladesh</a>
         </div>
         <div class="navbar-end gap-2 px-2">
           <img src="images/coin.png" alt="coin">
@@ -40,14 +40,14 @@
     </nav>
 
   </header>
-  <main class="flex justify-center">
-    <div id="donation-cards" class=" justify-center border-1 border-gray-300 rounded-lg p-6 w-full max-w-4xl">
+  <main class="flex justify-center md:mx-5 md:my-5">
+    <div id="donation-cards" class=" justify-center border border-gray-300 rounded-lg p-6 w-full max-w-4xl md:mx-5 md:my-5">
       <!-- Donation cards will be dynamically added here -->
-      <div class="card card-side bg-base-100 shadow-sm">
-        <figure>
-          <img src="images/feni.png" alt="feni-flood">
-        </figure>
-        <div class="card-body">
+      <div class="card flex flex-col md:flex-row bg-base-100 shadow-sm">
+        <figure class="w-full md:w-1/2 md:mx-5 md:my-5">
+  <img src="images/feni.png" alt="feni-flood" class="w-full h-full object-cover">
+</figure>
+        <div class="card-body w-full md:w-2/3">
           <div class="flex" id="flood-balance">
             <img src="images/coin.png" alt="coin" class="w-5 h-5 mr-1">
             <div id="flood-balance-main" class="font-bold">00</div>
@@ -69,11 +69,11 @@
           </div>
         </div>
       </div>
-      <div class="card card-side bg-base-100 shadow-sm my-5">
-        <figure>
+      <div class="card flex flex-col md:flex-row bg-base-100 shadow-sm my-5">
+        <figure class="w-full md:w-1/2 md:mx-5 md:my-5">
           <img src="images/noakhali.png" alt="Noakhali">
         </figure>
-        <div class="card-body">
+        <div class="card-body w-full md:w-2/3">
           <div class="flex" id="flood-balance">
             <img src="images/coin.png" alt="coin" class="w-5 h-5 mr-1">
             <div id="Noakhali-flood-balance-main" class="font-bold">00</div>
@@ -87,11 +87,11 @@
           </div>
         </div>
       </div>
-      <div class="card card-side bg-base-100 shadow-sm my-5">
-        <figure>
+      <div class="card flex flex-col md:flex-row bg-base-100 shadow-sm my-5">
+        <figure class="w-full md:w-1/2 md:mx-5 md:my-5">
           <img src="images/quota-protest.png" alt="quota-protest">
         </figure>
-        <div class="card-body">
+        <div class="card-body w-full md:w-2/3">
           <div class="flex" id="quota-protest">
             <img src="images/coin.png" alt="coin" class="w-5 h-5 mr-1">
             <div id="quota-protest-balance-main" class="font-bold">00</div>
